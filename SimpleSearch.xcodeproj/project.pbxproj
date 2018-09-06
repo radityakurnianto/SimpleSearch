@@ -23,6 +23,7 @@
 		E0444BDF205A289F0037D889 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0444BDD205A289F0037D889 /* ProductCell.swift */; };
 		E0444BE0205A289F0037D889 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0444BDE205A289F0037D889 /* ProductCell.xib */; };
 		E0444BE2205A2D1E0037D889 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0444BE1205A2D1E0037D889 /* SearchController.swift */; };
+		E0C2E040213E3476002E7D99 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C2E03F213E3476002E7D99 /* SearchViewModel.swift */; };
 		E0E074A1205B73A6003A72A3 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E074A0205B73A6003A72A3 /* ProductList.swift */; };
 		E0E074A4205B7FF1003A72A3 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E074A2205B7FF1003A72A3 /* LoadingCell.swift */; };
 		E0E074A5205B7FF1003A72A3 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E074A3205B7FF1003A72A3 /* LoadingCell.xib */; };
@@ -56,6 +57,7 @@
 		E0444BDD205A289F0037D889 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		E0444BDE205A289F0037D889 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		E0444BE1205A2D1E0037D889 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		E0C2E03F213E3476002E7D99 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		E0E074A0205B73A6003A72A3 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		E0E074A2205B7FF1003A72A3 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 		E0E074A3205B7FF1003A72A3 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
@@ -107,14 +109,14 @@
 			name = NetworkProtocol;
 			sourceTree = "<group>";
 		};
-		E02FDF7A205A58DB0098E7CF /* ViewController */ = {
+		E02FDF7A205A58DB0098E7CF /* View */ = {
 			isa = PBXGroup;
 			children = (
 				E0444BE1205A2D1E0037D889 /* SearchController.swift */,
 				E02FDF76205A4D6E0098E7CF /* FilterController.swift */,
 				E0E074B7205BE1AE003A72A3 /* ShopController.swift */,
 			);
-			path = ViewController;
+			path = View;
 			sourceTree = "<group>";
 		};
 		E02FDF7D205A63740098E7CF /* CollectionViewCell */ = {
@@ -167,14 +169,31 @@
 				E002EC19205A6F700037F8FB /* NetworkProtocol */,
 				E0444BD7205A27510037D889 /* Info.plist */,
 				E02FDF7D205A63740098E7CF /* CollectionViewCell */,
-				E02FDF7A205A58DB0098E7CF /* ViewController */,
+				E02FDF7A205A58DB0098E7CF /* View */,
 				E02FDF7E205A637F0098E7CF /* Utilities */,
-				E0E074A0205B73A6003A72A3 /* ProductList.swift */,
+				E0C2E03E213E345E002E7D99 /* Model */,
 				E0E074B0205BDFE8003A72A3 /* TableViewCell */,
 				E0E074AE205BD843003A72A3 /* Constants.swift */,
-				E0E074B5205BE0DC003A72A3 /* Shop.swift */,
+				E0C2E041213E34F4002E7D99 /* ViewModel */,
 			);
 			path = SimpleSearch;
+			sourceTree = "<group>";
+		};
+		E0C2E03E213E345E002E7D99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0E074A0205B73A6003A72A3 /* ProductList.swift */,
+				E0E074B5205BE0DC003A72A3 /* Shop.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0C2E041213E34F4002E7D99 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E0C2E03F213E3476002E7D99 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E0E074B0205BDFE8003A72A3 /* TableViewCell */ = {
@@ -336,6 +355,7 @@
 				E0E074B6205BE0DC003A72A3 /* Shop.swift in Sources */,
 				E002EC1D205A6FCB0037F8FB /* RequestConverter.swift in Sources */,
 				E0E074A1205B73A6003A72A3 /* ProductList.swift in Sources */,
+				E0C2E040213E3476002E7D99 /* SearchViewModel.swift in Sources */,
 				E0E074A4205B7FF1003A72A3 /* LoadingCell.swift in Sources */,
 				E0E074AF205BD843003A72A3 /* Constants.swift in Sources */,
 				E0444BDF205A289F0037D889 /* ProductCell.swift in Sources */,
